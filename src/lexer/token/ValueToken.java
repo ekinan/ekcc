@@ -1,5 +1,7 @@
 package lexer.token;
 
+import utils.FileLocation;
+
 /*
 
 This class represents a template for tokens that can hold values.
@@ -8,14 +10,14 @@ identifiers (holds the name of the variable).
 
 */
 public abstract class ValueToken<T> extends Token {
-  private T value;
+    private T value;
 
-  public ValueToken(TokenAttribute attr, Integer line, Integer col, T value) {
-    super(attr, line, col);
-    this.value = value;
-  }
+    public ValueToken(TokenAttribute attr, FileLocation fileLoc, T value) {
+        super(attr, fileLoc);
+        this.value = value;
+    }
 
-  public T getValue() {
-    return value;
-  }
+    public T getValue() {
+        return value;
+    }
 }

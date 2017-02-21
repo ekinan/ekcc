@@ -1,5 +1,7 @@
 package lexer.token;
 
+import utils.FileLocation;
+
 import static lexer.token.TokenAttribute.IDENT;
 
 /*
@@ -8,7 +10,7 @@ Represents tokens that hold identifier names
 
 */
 public class IdentToken extends ValueToken<String> {
-  public IdentToken(Integer line, Integer col, String value) {
-    super(IDENT, line, col, value);
-  }
+    public IdentToken(FileLocation fileLoc, String value) {
+        super(IDENT, fileLoc, value);
+    }
 }
