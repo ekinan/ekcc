@@ -8,7 +8,7 @@ Represents tokens that hold identifier names
 
 */
 public class IdentToken extends ValueToken<String> {
-  public IdentToken(String value) {
-    super(IDENT, value);
+  public IdentToken(Integer line, Integer col, String value) {
+    super(IDENT, line, col, value);
   }
 }

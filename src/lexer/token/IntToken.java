@@ -8,7 +8,7 @@ Represents tokens that hold integer values
 
 */
 public class IntToken extends ValueToken<Integer> {
-  public IntToken(Integer value) {
-    super(INTLIT, value);
+  public IntToken(Integer line, Integer col, Integer value) {
+    super(INTLIT, line, col, value);
   }
 }

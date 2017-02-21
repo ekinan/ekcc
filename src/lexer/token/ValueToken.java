@@ -10,8 +10,8 @@ identifiers (holds the name of the variable).
 public abstract class ValueToken<T> extends Token {
   private T value;
 
-  public ValueToken(TokenAttribute attr, T value) {
-    super(attr);
+  public ValueToken(TokenAttribute attr, Integer line, Integer col, T value) {
+    super(attr, line, col);
     this.value = value;
   }
 

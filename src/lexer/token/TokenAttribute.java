@@ -40,4 +40,7 @@ public enum TokenAttribute {
  GEQ,              // Greater than or equal to (>=)
  LOR,              // Logical or (||)
  LAND,             // Logical and (&&)
+
+ // EOF
+ EOF
 }

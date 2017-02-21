@@ -8,7 +8,7 @@ Represents tokens that hold character values
 
 */
 public class CharToken extends ValueToken<Character> {
-  public CharToken(Character value) {
-    super(CHARLIT, value);
+  public CharToken(Integer line, Integer col, Character value) {
+    super(CHARLIT, line, col, value);
   }
 }
