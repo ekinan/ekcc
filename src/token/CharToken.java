@@ -1,8 +1,8 @@
-package lexer.token;
+package token;
 
 import utils.FileLocation;
 
-import static lexer.token.TokenAttribute.CHARLIT;
+import static token.TokenAttribute.CHARLIT;
 
 /*
 

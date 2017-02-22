@@ -20,6 +20,11 @@ public class FileLocation {
         this.col = col;
     }
 
+    public FileLocation(FileLocation fileLoc) {
+        this.line = fileLoc.line;
+        this.col = fileLoc.col;
+    }
+
     public Integer getLine() {
         return line;
     }

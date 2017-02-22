@@ -1,4 +1,4 @@
-package lexer.token;
+package token;
 
 import utils.FileLocation;
 

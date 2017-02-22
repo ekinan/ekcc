@@ -1,4 +1,4 @@
-package lexer.token;
+package token;
 
 /*
 This enum houses all of the possible kinds of tokens that can be found in our language.
@@ -28,6 +28,8 @@ public enum TokenAttribute {
     IDENT,            // Identifier
 
     // Operators
+    ASSIGN,           // Assignment (=)
+
     ADD,              // Addition (+)
     SUBT,             // Subtraction (-)
     MULT,             // Multiplication (*)
@@ -38,9 +40,10 @@ public enum TokenAttribute {
     GT,               // Greater than (>)
     LEQ,              // Less than or equal to (<=)
     GEQ,              // Greater than or equal to (>=)
+    EQ,               // Equality (==)
     LOR,              // Logical or (||)
     LAND,             // Logical and (&&)
 
-    // EOF
-    EOF
+    // EOFT
+    EOFT
 }

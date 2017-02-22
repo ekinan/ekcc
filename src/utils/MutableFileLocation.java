@@ -11,13 +11,21 @@ public class MutableFileLocation extends FileLocation {
         super(line, col);
     }
 
-    // Increments the current line number.
-    public void incrLine() {
-        this.line++;
-    }
+    // Update the current location based on the character
+    // that was passed in. If it's a new line character,
+    // increment the current line number and reset the
+    // column to 0.
+    public void update(int ch) {
+        if (ch == -1) {
+            return;
+        }
 
-    // Increments the current column number.
-    public void incrCol() {
-        this.col++;
+        if (ch == '\n') {
+            line++;
+            col = 0;
+            return;
+        }
+
+        col++;
     }
 }
